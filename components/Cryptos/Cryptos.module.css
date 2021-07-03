@@ -6,28 +6,28 @@
 .coin_row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: center;
-  height: 80px;
+  height: 85px;
   border-bottom: 1px solid #2e2e2e;
-  width: 1000px;
+  width: 1100px;
   padding: 0rem 2rem;
 }
 
 .coin_row:hover {
-  background: #171718;
+  background: #525252;
 }
 
 .coin {
   display: flex;
   align-items: center;
-  padding-right: 24px;
+  padding-right: 40px;
 }
 
 .coin_img {
   height: 30px;
   width: 30px;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .coin_name {
@@ -42,7 +42,6 @@
 .coin_data {
   width: 100%;
   display: flex;
-  text-align: right;
   justify-content: space-between;
 }
 

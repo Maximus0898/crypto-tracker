@@ -23,7 +23,9 @@ const Cryptos = ({
             </div>
             <div className={styles.coin_data}>
               <p className={styles.coin_price}>${price}</p>
-              <p className={styles.coin_volume}>${volume.toLocaleString()}</p>
+              <p className={styles.coin_volume}>
+                ${volume.toLocaleString('en-US')}
+              </p>
               {priceChange < 0 ? (
                 <p className={(styles.coin_percent, styles.red)}>
                   {priceChange.toFixed(2)}%
@@ -35,7 +37,7 @@ const Cryptos = ({
               )}
 
               <p className={styles.coin_marketcap}>
-                Mkt Cap: ${marketcap.toLocaleString()}
+                Market Cap: ${marketcap.toLocaleString('en-US')}
               </p>
             </div>
           </div>

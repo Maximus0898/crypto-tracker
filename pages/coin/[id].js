@@ -16,19 +16,27 @@ const Coin = ({ coin }) => {
             <h1 className={styles.coin_name}>{coin.name}</h1>
             <p className={styles.coin_ticker}>{coin.symbol}</p>
             <ul className={styles.coin_list}>
-              <li>Price: ${coin.market_data.current_price.usd}</li>
               <li>
-                Market Cap: ${coin.market_data.market_cap.usd.toLocaleString()}
+                Price: $
+                {coin.market_data.current_price.usd.toLocaleString('en-US')}
+              </li>
+              <li>
+                Market Cap: $
+                {coin.market_data.market_cap.usd.toLocaleString('en-US')}
               </li>
               <li>
                 Trading Volume: $
-                {coin.market_data.total_volume.usd.toLocaleString()}
+                {coin.market_data.total_volume.usd.toLocaleString('en-US')}
               </li>
               <li>
-                24h Low / 24h High: ${coin.market_data.low_24h.usd} / $
-                {coin.market_data.high_24h.usd}
+                24h Low / 24h High: $
+                {coin.market_data.low_24h.usd.toLocaleString('en-US')} / $
+                {coin.market_data.high_24h.usd.toLocaleString('en-US')}
               </li>
-              <li>All-Time High: ${coin.market_data.ath.usd}</li>
+              <li>
+                All-Time High: $
+                {coin.market_data.ath.usd.toLocaleString('en-US')}
+              </li>
             </ul>
           </div>
         </div>
