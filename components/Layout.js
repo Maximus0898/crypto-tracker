@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from "next/image";
 
 const Layout = ({ children, title = 'Crypto Tracker' }) => {
   return (
@@ -13,7 +14,7 @@ const Layout = ({ children, title = 'Crypto Tracker' }) => {
       <header className="header">
         <Link href="/" passHref>
           <a>
-            <img className="coin_logo" src="/logo.png" alt="Logo" />
+            <Image className="coin_logo" src="/logo.png" alt="Logo" />
           </a>
         </Link>
       </header>

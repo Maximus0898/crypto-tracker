@@ -1,5 +1,6 @@
 import styles from './Cryptos.module.css';
 import Link from 'next/link';
+import Image from "next/image";
 
 const Cryptos = ({
   name,
@@ -17,7 +18,7 @@ const Cryptos = ({
         <div className={styles.coin_container}>
           <div className={styles.coin_row}>
             <div className={styles.coin}>
-              <img className={styles.coin_img} src={image} alt={name} />
+              <Image className={styles.coin_img} src={image} alt={name} />
               <p className={styles.coin_name}>{name}</p>
               <p className={styles.coin_symbol}>{symbol}</p>
             </div>
